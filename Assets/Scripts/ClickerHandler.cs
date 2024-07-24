@@ -16,7 +16,10 @@ public class ClickerHandler : MonoBehaviour
                 Shape shape = hit.collider.gameObject.GetComponent<Shape>();
 
                 if (shape != null)
+                {
                     shape.DisplayText();
+                    ShapeInfo.Instance.SetSelectedShape(shape);
+                }
             }
         }
     }
