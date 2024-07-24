@@ -2,8 +2,13 @@
 
 public class Cube : Shape
 {
+    private void Start()
+    {
+        message = "Click on Cube";
+    }
+
     public override void DisplayText()
     {
-        Debug.Log("Click on Cube");
+        MessageText.Instance.DispayMessage(message);
     }
 }

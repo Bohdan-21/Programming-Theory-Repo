@@ -2,8 +2,13 @@
 
 public class Sphere : Shape
 {
+    private void Start()
+    {
+        message = "Click on Sphere";
+    }
+
     public override void DisplayText()
     {
-        Debug.Log("Click on Sphere");
+        MessageText.Instance.DispayMessage(message);
     }
 }

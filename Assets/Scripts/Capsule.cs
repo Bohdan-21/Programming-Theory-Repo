@@ -2,8 +2,13 @@
 
 public class Capsule : Shape
 {
+    private void Start()
+    {
+        message = "Click on Capsule";
+    }
+
     public override void DisplayText()
     {
-        Debug.Log("Click on Capsule");
+        MessageText.Instance.DispayMessage(message);
     }
 }

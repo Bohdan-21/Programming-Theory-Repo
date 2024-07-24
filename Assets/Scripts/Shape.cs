@@ -3,6 +3,7 @@ using UnityEngine;
 public abstract class Shape : MonoBehaviour
 {
     [SerializeField] Renderer _renderer;
+    protected string message;
 
     public string Name { get => gameObject.name; set => gameObject.name = value; }
 

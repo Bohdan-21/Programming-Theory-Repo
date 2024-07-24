@@ -2,8 +2,13 @@
 
 public class Cylinder : Shape
 {
+    private void Start()
+    {
+        message = "Click on Cylinder";
+    }
+
     public override void DisplayText()
     {
-        Debug.Log("Click on Cylinder");
+        MessageText.Instance.DispayMessage(message);
     }
 }
